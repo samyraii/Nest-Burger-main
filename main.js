@@ -90,12 +90,3 @@
 window.addEventListener('scroll', checkItems);
 window.addEventListener('load', checkItems);
 
-window.addEventListener('load', () => {
-    setTimeout(() => {
-      const loader = document.getElementById('loader-overlay');
-      const content = document.getElementById('content');
-      loader.style.display = 'none';
-      content.style.display = 'block';
-      content.focus(); // Accessible focus on new content
-    }, 4000);
-  });
